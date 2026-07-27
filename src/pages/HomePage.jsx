@@ -4,6 +4,7 @@ import AboutSection from "../components/home/AboutSection";
 import Features from "../components/home/Features";
 import AcademicsPreview from "../components/home/AcademicsPreview";
 import FacilitiesGrid from "../components/home/FacilitiesGrid";
+import StatsSection from "../components/home/StatsSection";
 
 export default function HomePage() {
   return (
@@ -22,6 +23,9 @@ export default function HomePage() {
 
       {/* 5. Quintessential Facilities Grid Section */}
       <FacilitiesGrid />
+
+      {/* 6. Achievements, Statistics & Testimonials Section */}
+      <StatsSection />
     </div>
   );
 }
