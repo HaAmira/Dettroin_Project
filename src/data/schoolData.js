@@ -147,7 +147,7 @@ export const facilitiesData = [
     title: "5-Acre Pollution-Free Campus",
     category: "Infrastructure",
     description: "Set amidst 5 acres of lush greenery away from city pollution, providing a serene environment ideal for focused learning.",
-    icon: "TreeTrees",
+    icon: "Trees",
     image: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=1000"
   },
   {
