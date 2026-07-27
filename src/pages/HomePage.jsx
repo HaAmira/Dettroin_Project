@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../components/home/Hero";
 import AboutSection from "../components/home/AboutSection";
 import Features from "../components/home/Features";
+import AcademicsPreview from "../components/home/AcademicsPreview";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,9 @@ export default function HomePage() {
 
       {/* 3. Why Choose KIS Feature Cards Section */}
       <Features />
+
+      {/* 4. Academics & Curriculum Showcase Section */}
+      <AcademicsPreview />
     </div>
   );
 }
