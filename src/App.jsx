@@ -3,22 +3,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/common/Navbar";
 import Footer from "./components/common/Footer";
 import ScrollToTop from "./components/common/ScrollToTop";
-import HomePage from "./pages/HomePage";
-import GalleryPage from "./pages/GalleryPage";
 
-// Temp placeholder view for remaining inner pages
-function PlaceholderPage({ title }) {
-  return (
-    <div className="min-h-screen bg-slate-50 flex items-center justify-center p-8">
-      <div className="text-center max-w-md bg-white p-8 rounded-2xl shadow-md border border-slate-200">
-        <h1 className="text-3xl font-bold font-heading text-slate-900 mb-2">{title}</h1>
-        <p className="text-slate-600 text-sm">
-          Krishna International School (KIS Aligarh) - Page view under development.
-        </p>
-      </div>
-    </div>
-  );
-}
+// Dedicated Pages
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import AcademicsPage from "./pages/AcademicsPage";
+import AdmissionsPage from "./pages/AdmissionsPage";
+import FacilitiesPage from "./pages/FacilitiesPage";
+import GalleryPage from "./pages/GalleryPage";
+import ContactPage from "./pages/ContactPage";
 
 export default function App() {
   return (
@@ -29,12 +22,12 @@ export default function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<PlaceholderPage title="About KIS" />} />
-            <Route path="/academics" element={<PlaceholderPage title="Academics" />} />
-            <Route path="/admissions" element={<PlaceholderPage title="Admissions" />} />
-            <Route path="/facilities" element={<PlaceholderPage title="Facilities" />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/academics" element={<AcademicsPage />} />
+            <Route path="/admissions" element={<AdmissionsPage />} />
+            <Route path="/facilities" element={<FacilitiesPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
-            <Route path="/contact" element={<PlaceholderPage title="Contact Us" />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>
         <Footer />
