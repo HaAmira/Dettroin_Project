@@ -3,6 +3,7 @@ import Hero from "../components/home/Hero";
 import AboutSection from "../components/home/AboutSection";
 import Features from "../components/home/Features";
 import AcademicsPreview from "../components/home/AcademicsPreview";
+import FacilitiesGrid from "../components/home/FacilitiesGrid";
 
 export default function HomePage() {
   return (
@@ -18,6 +19,9 @@ export default function HomePage() {
 
       {/* 4. Academics & Curriculum Showcase Section */}
       <AcademicsPreview />
+
+      {/* 5. Quintessential Facilities Grid Section */}
+      <FacilitiesGrid />
     </div>
   );
 }
