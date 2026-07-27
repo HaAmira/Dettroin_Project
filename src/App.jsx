@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/common/Navbar";
 import ScrollToTop from "./components/common/ScrollToTop";
 import HomePage from "./pages/HomePage";
+import GalleryPage from "./pages/GalleryPage";
 
 // Temp placeholder view for remaining inner pages
 function PlaceholderPage({ title }) {
@@ -31,7 +32,7 @@ export default function App() {
             <Route path="/academics" element={<PlaceholderPage title="Academics" />} />
             <Route path="/admissions" element={<PlaceholderPage title="Admissions" />} />
             <Route path="/facilities" element={<PlaceholderPage title="Facilities" />} />
-            <Route path="/gallery" element={<PlaceholderPage title="Gallery" />} />
+            <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/contact" element={<PlaceholderPage title="Contact Us" />} />
           </Routes>
         </main>

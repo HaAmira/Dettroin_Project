@@ -5,6 +5,7 @@ import Features from "../components/home/Features";
 import AcademicsPreview from "../components/home/AcademicsPreview";
 import FacilitiesGrid from "../components/home/FacilitiesGrid";
 import StatsSection from "../components/home/StatsSection";
+import GalleryPreview from "../components/home/GalleryPreview";
 
 export default function HomePage() {
   return (
@@ -26,6 +27,9 @@ export default function HomePage() {
 
       {/* 6. Achievements, Statistics & Testimonials Section */}
       <StatsSection />
+
+      {/* 7. Gallery Preview Section */}
+      <GalleryPreview limit={6} showFilter={true} />
     </div>
   );
 }
