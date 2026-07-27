@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/common/Navbar";
+import Footer from "./components/common/Footer";
 import ScrollToTop from "./components/common/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import GalleryPage from "./pages/GalleryPage";
@@ -36,6 +37,7 @@ export default function App() {
             <Route path="/contact" element={<PlaceholderPage title="Contact Us" />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   );
