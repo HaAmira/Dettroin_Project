@@ -6,14 +6,14 @@
 
 ## 👤 Candidate Details
 
-* **Full Name**: Amir [Your Full Name]
-* **Intern ID**: [Your Intern ID]
-* **Email Address**: [Your Email Address]
-* **GitHub Username**: [HaAmira](https://github.com/HaAmira)
+* **Full Name**: Amir
+* **Intern ID**: Not Provided
+* **Email Address**: amiransaridelhi739@gmail.com
+* **GitHub Username**: https://github.com/HaAmira
 * **Selected Website**: Krishna International School (KIS Aligarh)
 * **Original Website URL**: [https://kisaligarh.com/](https://kisaligarh.com/)
 * **GitHub Repository**: [https://github.com/HaAmira/Dettroin_Project](https://github.com/HaAmira/Dettroin_Project)
-* **Live Demo**: [Vercel Deployment Link](https://dettroin-project.vercel.app)
+* **Live Demo**: https://dettroin-project.vercel.app/
 
 ---
 
@@ -147,26 +147,6 @@ dettroin-assignment/
    npm run build
    ```
    Output bundle will be generated inside the `dist/` directory.
-
----
-
-## 📊 Git Commit Milestones Log
-
-This project was built following a structured 13-milestone development workflow:
-
-1. `feat: initialize React Vite project with Tailwind CSS, Lucide icons, and React Router`
-2. `feat: setup global CSS design tokens, typography, and verified school data model`
-3. `feat: implement responsive sticky Navbar with mobile drawer navigation`
-4. `feat: create high-impact Hero section with campus statistics`
-5. `feat: add About School and Why Choose Us feature sections`
-6. `feat: build Academics programs showcase section`
-7. `feat: implement interactive Facilities grid component`
-8. `feat: add School Statistics and Achievements counter section`
-9. `feat: build responsive Gallery component with interactive lightbox`
-10. `feat: create Admissions CTA banner, Contact section, and comprehensive Footer`
-11. `feat: implement multi-page React Router setup with inner pages and forms`
-12. `style: polish responsiveness, subtle scroll animations, and accessibility`
-13. `docs: add comprehensive README.md and finalize build verification`
 
 ---
 
