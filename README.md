@@ -1,16 +1,178 @@
-# React + Vite
+# Krishna International School (KIS Aligarh) - Modern Website Redesign
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> **Technical Assessment Submission for Dettroin Full Stack Developer Internship**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 👤 Candidate Details
 
-## React Compiler
+* **Full Name**: Amir [Your Full Name]
+* **Intern ID**: [Your Intern ID]
+* **Email Address**: [Your Email Address]
+* **GitHub Username**: [HaAmira](https://github.com/HaAmira)
+* **Selected Website**: Krishna International School (KIS Aligarh)
+* **Original Website URL**: [https://kisaligarh.com/](https://kisaligarh.com/)
+* **GitHub Repository**: [https://github.com/HaAmira/Dettroin_Project](https://github.com/HaAmira/Dettroin_Project)
+* **Live Demo**: [Vercel Deployment Link](https://dettroin-project.vercel.app)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🚀 Project Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+This project is a complete, modern, professional, and accessible UI/UX redesign of the **Krishna International School (KIS Aligarh)** website. 
+
+The original website suffered from an outdated dark interface, complex slide-out navigation menus, hardcoded pixel margins causing horizontal overflow on mobile devices, low visual contrast, and a lack of modern interactivity. 
+
+The redesign transforms KIS Aligarh's online presence into a world-class educational portal—retaining all verified factual information, motto, address, CBSE affiliation status, and portal links while introducing a clean royal-blue and emerald-green aesthetic, glassmorphism headers, tabbed academic level showcases, interactive facility lightboxes, filterable photo galleries, and an online fee payment quick portal.
+
+---
+
+## 🛠️ Technology Stack
+
+* **Frontend Framework**: [React.js](https://react.dev/) (v19)
+* **Build Tool**: [Vite](https://vite.dev/) (v8)
+* **Styling & Design Tokens**: [Tailwind CSS](https://tailwindcss.com/) (v4) with custom glassmorphism utilities & Google Fonts (*Outfit* & *Inter*)
+* **Client-Side Routing**: [React Router](https://reactrouter.com/) (v6)
+* **Icon System**: [Lucide React](https://lucide.dev/)
+* **Animations**: [Framer Motion](https://www.framer.com/motion/)
+* **Deployment Target**: [Vercel](https://vercel.com/)
+
+---
+
+## ✨ Key UI/UX Improvements Made
+
+1. **Modern Visual Identity & Color Palette**:
+   * **Royal Blue & Slate** (`#0f172a`, `#1e3a8a`) representing trust and educational prestige.
+   * **Emerald Green** (`#059669`, `#10b981`) highlighting vitality, growth, and achievements.
+   * **Gold Accents** (`#d97706`) for badges and awards.
+2. **Sticky Glassmorphic Header & Mobile Drawer Navigation**:
+   * Replaced the complex multi-tiered slide menu with an intuitive glassmorphic header and a slide-over mobile drawer navigation.
+   * Added top announcement bar featuring CBSE affiliation notice and direct fee payment quick links.
+3. **Interactive Academic & Campus Showcase**:
+   * Tabbed academic levels selector (Pre-Primary, Primary, Middle, Secondary, Senior Secondary - Science, Commerce, Humanities).
+   * Interactive modal lightboxes for campus facilities (5-acre eco campus, science labs, digital library, sports complex, theatre, transport).
+4. **Filterable Gallery with Lightbox Inspection**:
+   * Instant category filtering (Campus, Academics, Sports, Events) with full-screen image inspection, keyboard/touch navigation, and captions.
+5. **Enhanced Accessibility & Performance**:
+   * Added `:focus-visible` outline indicators for keyboard navigation.
+   * Ensured proper semantic HTML5 structure, ARIA labels, image alt attributes, and responsive breakpoints.
+   * Zero horizontal scroll overflow across all viewports.
+
+---
+
+## 📌 Verified Factual Content Retained
+
+* **School Name**: Krishna International School (KIS Aligarh)
+* **Motto**: *"Dedicated to Excellence"*
+* **Affiliation**: CBSE Affiliated Senior Secondary School
+* **Campus & Stats**: 5-Acre Eco-Friendly Green Campus, 6,000+ Students & Faculty, 60+ National & International Awards, 100% Parent Satisfaction.
+* **Address**: Delhi G.T. Road, Aligarh - 202001 (U.P.), INDIA
+* **Helplines**: `+91 98370 50000`, `+91 73510 50000` | `info@kisaligarh.com`
+* **Portals**: Accevate Fee Payment & Student Application (`KISALG` school code).
+
+---
+
+## 📁 Project Folder Architecture
+
+```
+dettroin-assignment/
+├── public/
+├── src/
+│   ├── assets/              # Logos and static media assets
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Navbar.jsx   # Sticky glass header with mobile drawer & top bar
+│   │   │   ├── Footer.jsx   # Multi-column footer with apps, maps & quick links
+│   │   │   ├── SectionHeader.jsx # Reusable section headers
+│   │   │   └── ScrollToTop.jsx   # Route scroll restoration helper
+│   │   └── home/
+│   │       ├── Hero.jsx            # High-impact hero section & stats counter
+│   │       ├── AboutSection.jsx    # Campus summary & 4-photo collage
+│   │       ├── Features.jsx        # "Why Choose KIS" 6-strength cards
+│   │       ├── AcademicsPreview.jsx# Interactive academic level tabs
+│   │       ├── FacilitiesGrid.jsx  # Campus facilities & detail modal
+│   │       ├── StatsSection.jsx    # Awards & parental testimonials
+│   │       ├── GalleryPreview.jsx  # Category filter gallery & lightbox
+│   │       ├── AdmissionCTA.jsx    # Admissions call to action banner
+│   │       └── ContactSection.jsx  # Contact details & enquiry form
+│   ├── data/
+│   │   ├── schoolData.js    # Verified facts, facilities, staff & FAQs
+│   │   └── galleryData.js   # Categorized gallery photos
+│   ├── pages/
+│   │   ├── HomePage.jsx
+│   │   ├── AboutPage.jsx
+│   │   ├── AcademicsPage.jsx
+│   │   ├── AdmissionsPage.jsx
+│   │   ├── FacilitiesPage.jsx
+│   │   ├── GalleryPage.jsx
+│   │   └── ContactPage.jsx
+│   ├── App.jsx              # Main router setup
+│   ├── index.css            # Tailwind CSS v4 & custom design tokens
+│   └── main.jsx
+├── .gitignore               # Configured to ignore node_modules, dist, .env
+├── index.html               # SEO metadata & Google Fonts
+├── package.json
+└── vite.config.js
+```
+
+---
+
+## 💻 Local Installation & Setup Instructions
+
+### Prerequisites
+* **Node.js**: v18.0.0 or higher
+* **npm**: v9.0.0 or higher
+
+### Steps
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/HaAmira/Dettroin_Project.git
+   cd Dettroin_Project
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+   Open `http://localhost:5173` in your browser.
+
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
+   Output bundle will be generated inside the `dist/` directory.
+
+---
+
+## 📊 Git Commit Milestones Log
+
+This project was built following a structured 13-milestone development workflow:
+
+1. `feat: initialize React Vite project with Tailwind CSS, Lucide icons, and React Router`
+2. `feat: setup global CSS design tokens, typography, and verified school data model`
+3. `feat: implement responsive sticky Navbar with mobile drawer navigation`
+4. `feat: create high-impact Hero section with campus statistics`
+5. `feat: add About School and Why Choose Us feature sections`
+6. `feat: build Academics programs showcase section`
+7. `feat: implement interactive Facilities grid component`
+8. `feat: add School Statistics and Achievements counter section`
+9. `feat: build responsive Gallery component with interactive lightbox`
+10. `feat: create Admissions CTA banner, Contact section, and comprehensive Footer`
+11. `feat: implement multi-page React Router setup with inner pages and forms`
+12. `style: polish responsiveness, subtle scroll animations, and accessibility`
+13. `docs: add comprehensive README.md and finalize build verification`
+
+---
+
+## 🌐 Deployment
+
+The application is optimized for zero-configuration deployment on **Vercel**:
+* Framework Preset: **Vite**
+* Build Command: `npm run build`
+* Output Directory: `dist`
